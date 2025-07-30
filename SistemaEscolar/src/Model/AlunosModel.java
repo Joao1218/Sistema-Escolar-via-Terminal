@@ -3,6 +3,7 @@ package Model;
 import java.time.LocalDate;
 
 public class AlunosModel {
+    private Integer id;
     private String name;
     private String email;
     private LocalDate aniversario;
@@ -11,11 +12,12 @@ public class AlunosModel {
     public AlunosModel() {
     }
 
-    public AlunosModel(String name, String email, LocalDate aniversario, Integer turmaId) {
+    public AlunosModel(String name, String email, LocalDate aniversario, Integer turmaId, Integer id) {
         this.name = name;
         this.email = email;
         this.aniversario = aniversario;
         this.turmaId = turmaId;
+        this.id = id;
     }
 
     public String getName() {
@@ -48,5 +50,13 @@ public class AlunosModel {
 
     public void setTurmaId(Integer turmaId) {
         this.turmaId = turmaId;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
