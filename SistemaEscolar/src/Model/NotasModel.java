@@ -7,15 +7,17 @@ public class NotasModel {
     private Integer materiaId;
     private Integer professorId;
     private BigDecimal nota;
+    private Integer id;
 
     public NotasModel() {
     }
 
-    public NotasModel(Integer alunoId, Integer materiaId, Integer professorId, BigDecimal nota) {
+    public NotasModel(Integer alunoId, Integer materiaId, Integer professorId, BigDecimal nota, Integer id) {
         this.alunoId = alunoId;
         this.materiaId = materiaId;
         this.professorId = professorId;
         this.nota = nota;
+        this.id = id;
     }
 
     public Integer getAlunoId() {
@@ -48,5 +50,13 @@ public class NotasModel {
 
     public void setNota(BigDecimal nota) {
         this.nota = nota;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
