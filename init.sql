@@ -43,3 +43,10 @@ CREATE TABLE IF NOT EXISTS notas (
     FOREIGN KEY (materia_id) REFERENCES materias(id) ON DELETE CASCADE,
     FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE SET NULL
 );
+
+CREATE TABLE IF NOT EXISTS administrador{
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    cpf VARCHAR(11) NOT NULL
+}
